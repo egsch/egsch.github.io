@@ -77,15 +77,19 @@ body {
 }
 
 #project-tile1 {
-  background-image: url("https://github.com/egsch/MyFiles/blob/master/smartmockups_k9tehg2f.png?raw=true");
+  background-image: url("files/focus-timer-png.png");
 }
 
 #project-tile2 {
-  background-image: url("https://github.com/egsch/MyFiles/blob/master/smartmockups_k9tfkovq.png?raw=true");
+  background-image: url("files/markdown-png.png");
+}
+
+#project-tile3 {
+  background-image: url("files/smartmockups_kash29zy.png");
 }
 
 #welcome-section {
-  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg);
+  background-image: url("files/night-sky.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -260,7 +264,7 @@ button {
 }
 
 #contact {
-  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg);
+  background-image: url("files/night-sky.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
