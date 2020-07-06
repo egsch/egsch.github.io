@@ -165,20 +165,6 @@ a {
   border-top-right-radius: 0.25em;
 }
 
-@media (max-width: 800px) {
-  #projects {
-    grid-template-rows: 45vh 45vh;
-    grid-template-columns: 50% 50%;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  #welcome-section {
-    background-attachment: fixed;
-  }
-}
 @media (max-width: 700px) {
   #navbar {
     flex-direction: column;
@@ -208,6 +194,22 @@ a {
     border-radius: 0;
   }
 }
+
+@media (max-width: 800px) {
+  #projects {
+    grid-template-rows: 45vh 45vh;
+    grid-template-columns: 50% 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #welcome-section {
+    background-attachment: fixed;
+  }
+}
+
 h2 {
   font-family: "Manrope", sans serif;
   text-align: center;
