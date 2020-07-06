@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if ($(window).width() < 390) {
+  if ($(window).width() <= 700) {
     $(".nav-link").hide();
     $("#button").text("Menu");
   }
@@ -14,13 +14,13 @@ $("#button").click(function() {
   };
 });
 $(".nav-link").click(function(){
-  if ($(window).width() < 390) {
+  if ($(window).width() <= 700) {
   $(".nav-link").hide();
   $("#button").text("Menu");
   }
 })
 $( window ).resize(function() {
-   if ($(window).width() > 390) {
+   if ($(window).width() > 700) {
     $(".nav-link").show();
   } else {
     $(".nav-link").hide();
