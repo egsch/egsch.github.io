@@ -285,7 +285,7 @@ button {
   padding: 10%;
 }
 
-.fa-angle-down {
+#angle-down {
   position: absolute;
   color: white;
   font-size: 40px;
