@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | egsch</title>
+  <title>My Portfolio | Emma Schaumann</title>
   <script src="https://kit.fontawesome.com/28dc18d156.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="logo-box">
-      <a href="https://github.com/egsch"><img id="logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pofilo.fr%2Fimg%2FSPOF-github%2Fgithub1600.png&f=1&nofb=1" alt="CodePen"></a>
-      <a href="https://codepen.io/Umma2/"><img class="logo" src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" alt="CodePen"></a>
+      <a href="https://github.com/egsch"><img id="logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pofilo.fr%2Fimg%2FSPOF-github%2Fgithub1600.png&f=1&nofb=1" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/emma-schaumann/"><img class="logo" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FLinkedin-PNG-Clipart.png&f=1&nofb=1" alt="Linkedin"></a>
     </div>
     <div id="navbar">
       <button id = "button">Menu</button>
@@ -24,7 +24,7 @@
     </div>
     <section id="welcome-section">
       <div id="headlines">
-      <h1 class="home">Hey, I'm Emma!</h1>
+      <h1 class="home">Hi, I'm Emma Schaumann!</h1>
       <p class="home"> I'm a web designer and developer <br> with a passion for design and usability.</p>
       </div>
       <a href="#project-section"><img id="angle-down" src="./files/arrow-down.png"></a>
@@ -32,38 +32,74 @@
     <section id="project-section">
     <h2 id="project-heading">My Projects</h2>
     <div id="projects">
-      <a href="https://codepen.io/Umma2/pen/oNjxbox" class="image-link">
-      <div class="project-tile" id="project-tile1">
-        <span class="project-tools">HTML, CSS, Javascript, React</span>
-        <span class="project-title">Focus Pomodoro Timer</span>
-      </div>
-      </a>
-      <a href="https://codepen.io/Umma2/pen/VwLXoyb" class="image-link">
-        <div class="project-tile" id="project-tile2">
-        <span class="project-tools">HTML, CSS, Javascript, React</span>
-        <span class="project-title">React Markdown Previewer</span>
-      </div>
-      </a>
-      <a href="https://myexercise.glitch.me/" class="image-link">
-        <div class="project-tile" id="project-tile3">
-        <span class="project-tools">HTML, CSS, Node, Express, MongoDB</span>
-        <span class="project-title">Exercise Tracker App</span>
-      </div>
-      </a>
+        <div id="project1">
+            <a href="https://egsch.github.io/focus" class="image-link">
+              <div class="project-image" id="project-tile1"></div>
+            </a>
+        <div class="project-info">
+        <div>
+        <h3 class="project-title">Focus Pomodoro Timer</h3>
+        <p class="project-tools">HTML, CSS, Javascript, React</p>
+        </div>
+        <div>
+        <p class="project-link" ><a class="project-link" href="https://egsch.github.io/focus">Try it out!</a></p>
+        <p class="project-link" ><a class="project-link" href="https://github.com/egsch/focus">View on Github</a></p>
+        </div>
+        </div>
+        </div>
+      <div id="project2">
+            <a href="https://egsch.github.io/markdown-previewer" class="image-link">
+              <div class="project-image" id="project-tile2"></div>
+            </a>
+        <div class="project-info">
+        <div>
+            <h3 class="project-title">React Markdown Previewer</h3>
+        <p class="project-tools">HTML, CSS, Javascript, React</p>
+        </div>
+        <div><p class="project-link"><a class="project-link" href="https://egsch.github.io/markdown-previewer">Try it out!</a></p>
+        <p class="project-link"><a class="project-link" href="https://github.com/egsch/markdown-previewer">View on Github</a></p></div>
+        </div>
+        </div>
+        <div id="project3">
+            <a href="https://myexercise.glitch.me/" class="image-link">
+              <div class="project-image" id="project-tile3"></div>
+            </a>
+        <div class="project-info">
+        <h3 class="project-title">Exercise Tracker API</h3>
+        <p class="project-tools">HTML,  CSS, Node, Express, MongoDB</p>
+        <div>
+        <p class="project-link" ><a class="project-link" href="https://myexercise.glitch.me/">Try it out!</a></p>
+        <p class="project-link" ><a class="project-link" href="https://github.com/egsch/myexercise">View on Github</a></p>
+        </div>
+        </div>
+        </div>
     </div>
-    <p class="pusual">See more of my projects at <a target="_blank" href="https://codepen.io/Umma2/" class="plink">Codepen</a>.</p>
     </section>
-    <div id="contact">
+    <section id="contact">
       <div id="white">
       <h2>Want to learn more about me?</h2>
-      <p class="pusual">Check out my<a href="https://www.freecodecamp.org/emma2" id="profile-link" class="plink" target="_blank"> FreeCodeCamp account<a> or <a href="https://codepen.io/Umma2/" target="_blank" class="plink">my Codepen profile</a>, or find me on <a href="https://github.com/egsch" target="_blank" class="plink">Github</a>!</p>
+      <p class="pusual"> Find me on <a href="https://github.com/egsch" target="_blank" class="plink">Github</a> or <a href="https://www.linkedin.com/in/emma-schaumann/" target="_blank" class="plink">LinkedIn</a>, or send a message below!</p>
+    <form action="https://send.pageclip.co/dgKAnaMH67pChEcD5KwTYJTEWmDZ2l3i/contact-form" class="pageclip-form" method="post">
+
+    <input type="text" name="name" placeholder="Name"/>
+    
+  <!-- This will be used in the email's reply-to field. Must have name="email" -->
+  <input type="email" name="email" placeholder="email@example.com"/>
+
+  <!-- This will be used in the email's subject. Must have name="subject" -->
+  <input type="text" name="subject" placeholder="Message subject"/>
+
+  <textarea name="body" placeholder="Message text"></textarea>
+
+  <input type="submit" value="Send"></input>
+</form>
        </div>
-    </div>
+    </section>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>

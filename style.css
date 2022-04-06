@@ -4,7 +4,7 @@
     opacity: 0;
   }
   to {
-    top: 40vh;
+    top: 35vh;
     opacity: 1;
   }
 }
@@ -44,35 +44,56 @@ body {
 #projects {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   max-width: 550px;
   min-height: 100vh;
 }
 
-.project-tile {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 50vh;
-  align-items: flex-end;
-  justify-content: space-between;
-  border: 0px #eeeeee solid;
-  margin: 50px 0px 20px 0px;
+.project-image {
+  width: 39vw;
+  height: 22vw;
+  border: none;
+  margin: 1vw;
   background-size: cover;
   background-position: center;
   background-repeat: no repeat;
-  border-radius: 0.25em;
   opacity: 0.8;
   padding: 0px;
 }
 
-.image-link {
-  width: 100%;
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    width: 40vw;
+    height: 23vw;
+    background-color: #fff;
+    margin: 0px 10px 0px 0px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.project-tile:hover {
+#project1, #project2, #project3 {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.image-link {
+  width: auto;
+}
+
+.project-image:hover {
   opacity: 1;
 }
 
@@ -112,10 +133,11 @@ body {
 #headlines {
   animation: inhome 3s ease-out;
   position: absolute;
+  top: 35vh;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin: 0px;
 }
 
@@ -149,20 +171,16 @@ a {
 
 .project-title {
   text-transform: uppercase;
-  font-size: 12px;
-  padding: 1em;
+  font-size: 15px;
+  padding: .5em;
   margin: 0px;
-  background-color: white;
-  border-top-left-radius: 0.25em;
 }
 
 .project-tools {
   text-transform: uppercase;
   font-size: 12px;
-  padding: 1em;
+  padding: .5em;
   margin: 0px;
-  background-color: white;
-  border-top-right-radius: 0.25em;
 }
 
 @media (max-width: 700px) {
@@ -175,45 +193,77 @@ a {
     background-color: #eee;
   }
 
+  form {
+      width: 100%;
+  }
+
   #button {
     display: block;
     font-size: 15px;
     padding: 15px;
   }
 
-  .project-tile {
-    width: 90vw;
-    max-height: 200px;
-    max-width: 100%;
-    margin: 30px;
+  .project-image {
+    width: 60vw;
+    height: 35vw;
+    margin: 10px;
     opacity: 1;
+    
+  }
+  .project-info {
+      width: 60vw;
+      margin-right: 0;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      height: auto;
   }
 
   .project-title, .project-tools {
-    width: 50%;
     border-radius: 0;
   }
+    #project1, #project2, #project3 {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
 }
 
-/*@media (max-width: 800px) {
-  #projects {
-    grid-template-rows: 45vh 45vh;
-    grid-template-columns: 50% 50%;
-  }
+@media (min-width: 700px) {
+    form {
+        width: 60%;
+    }
+    .project-title {
+        text-transform: none;
+        font-size: 20px;
+        font-family: "Manrope";
+        padding: 2px;
+    }
+}
 
-  img {
-    width: 100%;
-  }
-
-  #welcome-section {
-    background-attachment: fixed;
-  }
-}*/
+@media (min-width: 1000px) {
+    /**Create a better layout for projects on desktop - overlap, maybe? Smaller info box**/
+    .project-info {
+        height: auto;
+        margin-left: 0px;
+        width: 20vw;
+        margin-right: 2vw;
+    }
+    .project-image{
+        margin-right: -55px;
+    }
+    
+    #project1, #project2, #project3 {
+        width: auto;
+    }
+}
 
 h2 {
   font-family: "Manrope", sans serif;
   text-align: center;
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
   font-size: 25px;
 }
@@ -239,20 +289,28 @@ h2 {
   z-index: 1;
   width: 44px;
   height: 88px;
-  background-color: white;
+  background-color: #eee;
   border-radius: 22px;
 }
 
 .pusual {
   font-size: 16px;
   font-family: "Manrope", sans serif;
-  margin-bottom: 53px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 .plink {
   color: #9999bb;
   font-size: 16px;
+}
+
+.project-link {
+  font-size: 16px;
+  font-family: "Manrope", sans serif;
+  color: #9999bb;
+  margin-left: 1vw;
+  margin-bottom: 5px;
 }
 
 button {
@@ -278,11 +336,48 @@ button {
   background-attachment: fixed;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    border: none;
+    background-color: #ddd;
+    margin: 4px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: none;
+    box-sizing: content-box;
+    background-color: #ccc;
+}
+
+textarea{
+    height: 60px;
+    width: 100%;
+    border: none;
+    background-color: #ddd;
+    margin: 4px;
+    padding: 10px;
+}
+
 #white {
   background-color: white;
-  height: auto;
-  width: 50vw;
-  padding: 10%;
+  min-height: 75vh;
+  width: 75vw;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 #angle-down {
