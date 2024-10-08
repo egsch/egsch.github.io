@@ -29,7 +29,8 @@ body {
   margin: 0px;
 }
 
-#project-section {
+#project-section,
+#background-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,13 +41,14 @@ body {
   overflow: none;
 }
 
-#projects {
+#projects,
+#education {
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 550px;
+  max-width: 75vw;
   min-height: 100vh;
 }
 
@@ -62,30 +64,32 @@ body {
   padding: 0px;
 }
 
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    width: 40vw;
-    height: 23vw;
-    background-color: #fff;
-    margin: 0px 10px 0px 0px;
-    padding: 15px;
-    border-radius: 5px;
+.project-info,
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  flex: 3;
+  background-color: #fff;
+  margin: 0px 10px 0px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  align-items: start;
 }
 
-#project1, #project2, #project3 {
-    display: flex;
-    flex-direction: row;
-    width: 75vw;
-    margin: 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: #eee;
-    box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 900px;
 }
 
 .image-link {
@@ -111,6 +115,7 @@ body {
 #welcome-section {
   background-image: url("files/night-sky.jpg");
   height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no repeat;
@@ -171,15 +176,32 @@ a {
 .project-title {
   text-transform: uppercase;
   font-size: 15px;
-  padding: .5em;
+  padding: 0.5em;
+  margin: 0px;
+}
+
+.project-title {
   margin: 0px;
 }
 
 .project-tools {
   text-transform: uppercase;
   font-size: 12px;
-  padding: .5em;
+  padding: 0.5em;
   margin: 0px;
+}
+
+.exp-title {
+  margin: 2px none;
+  font-family: "Manrope";
+  text-align: end;
+}
+
+.ed-details {
+  font-size: 14px;
+  padding: 0px 1em;
+  margin: 0px;
+  font-family: sans-serif;
 }
 
 @media (max-width: 700px) {
@@ -190,10 +212,11 @@ a {
   .nav-link {
     margin: 0.25em;
     background-color: #eee;
+    display: none;
   }
 
   form {
-      width: 100%;
+    width: 100%;
   }
 
   #button {
@@ -207,64 +230,87 @@ a {
     height: 35vw;
     margin: 10px;
     opacity: 1;
-    
   }
-  .project-info {
-      width: 60vw;
-      margin-right: 0;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      height: auto;
+  .project-info,
+  .experience-info {
+    width: 60vw;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: auto;
+    align-items: center;
   }
 
-  .project-title, .project-tools {
+  .exp-title {
+    text-align: center;
+  }
+  .project-title,
+  .project-tools {
     border-radius: 0;
   }
-    #project1, #project2, #project3 {
+  .card {
     display: flex;
     flex-direction: column;
     width: 75vw;
     margin: 15px;
     justify-content: center;
     align-items: center;
-}
+  }
+  .experience-heading {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (min-width: 700px) {
-    form {
-        width: 60%;
-    }
-    .project-title {
-        text-transform: none;
-        font-size: 20px;
-        font-family: "Manrope";
-        padding: 2px;
-    }
+  form {
+    width: 60%;
+  }
+  .project-title,
+  .exp-title {
+    text-transform: none;
+    font-size: 20px;
+    font-family: "Manrope";
+    padding: 2px;
+  }
+  .experience-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 5px;
+    text-align: end;
+    min-width: 20vw;
+    flex: 1;
+    padding: 15px;
+  }
 }
 
 @media (min-width: 1000px) {
-    /**Create a better layout for projects on desktop - overlap, maybe? Smaller info box**/
-    .project-info {
-        height: auto;
-        margin-left: 0px;
-        width: 20vw;
-        margin-right: 2vw;
-    }
-    .project-image{
-        margin-right: -55px;
-    }
-    
-    #project1, #project2, #project3 {
-        width: auto;
-    }
+  /**Create a better layout for projects on desktop - overlap, maybe? Smaller info box**/
+  .project-info {
+    height: auto;
+    margin-left: 0px;
+    width: 20vw;
+    margin-right: 2vw;
+  }
+  .project-image {
+    margin-right: -55px;
+  }
 }
 
 h2 {
-  font-family: "Manrope", sans serif;
+  font-family: "Manrope", sans-serif;
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 25px;
+}
+
+h3 {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 .logo {
@@ -336,35 +382,35 @@ button {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input:not([type="submit"]) {
-    width: 100%;
-    border: none;
-    background-color: #ddd;
-    margin: 4px;
-    padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #ddd;
+  margin: 4px;
+  padding: 10px;
 }
 
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 4px;
-    border: none;
-    box-sizing: content-box;
-    background-color: #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: none;
+  box-sizing: content-box;
+  background-color: #ccc;
 }
 
-textarea{
-    height: 60px;
-    width: 100%;
-    border: none;
-    background-color: #ddd;
-    margin: 4px;
-    padding: 10px;
+textarea {
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #ddd;
+  margin: 4px;
+  padding: 10px;
 }
 
 #white {

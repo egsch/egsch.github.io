@@ -1,91 +1,233 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio | Emma Schaumann</title>
-  <script src="https://kit.fontawesome.com/28dc18d156.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="logo-box">
-      <a href="https://github.com/egsch"><img id="logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pofilo.fr%2Fimg%2FSPOF-github%2Fgithub1600.png&f=1&nofb=1" alt="Github"></a>
-      <a href="https://www.linkedin.com/in/emma-schaumann/"><img class="logo" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FLinkedin-PNG-Clipart.png&f=1&nofb=1" alt="Linkedin"></a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Emma Schaumann</title>
+    <script
+      src="https://kit.fontawesome.com/28dc18d156.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="logo-box">
+      <a href="https://github.com/egsch"
+        ><img
+          id="logo"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pofilo.fr%2Fimg%2FSPOF-github%2Fgithub1600.png&f=1&nofb=1"
+          alt="Github"
+      /></a>
+      <a href="https://www.linkedin.com/in/emma-schaumann/"
+        ><img
+          class="logo"
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FLinkedin-PNG-Clipart.png&f=1&nofb=1"
+          alt="Linkedin"
+      /></a>
     </div>
     <div id="navbar">
-      <button id = "button">Menu</button>
+      <button id="button">Menu</button>
       <a href="#welcome-section" id="#link" class="nav-link"> Home</a>
+      <a href="#background-section" class="nav-link" id="#link-three">About</a>
       <a href="#project-section" class="nav-link" id="#link-two">Projects</a>
       <a href="#contact" class="nav-link" id="#link-three">Contact</a>
     </div>
     <section id="welcome-section">
       <div id="headlines">
-      <h1 class="home">Hi, I'm Emma Schaumann!</h1>
-      <p class="home"> I'm a web designer and developer <br> with a passion for design and usability.</p>
+        <h1 class="home">Hi, I'm Emma Schaumann!</h1>
+        <p class="home">
+          I'm a CS student at UT Dallas <br />
+          and aspiring software developer.
+        </p>
       </div>
-      <a href="#project-section"><img id="angle-down" src="./files/arrow-down.png"></a>
+      <a href="#project-section"
+        ><img id="angle-down" src="./files/arrow-down.png"
+      /></a>
+    </section>
+    <section id="background-section">
+      <h2>About Me</h2>
+      <div id="education">
+        <h3>My Education</h3>
+        <div class="card">
+          <div class="experience-heading">
+            <h3 class="exp-title">Bachelor's Degree</h3>
+            <p class="ed-details">August 2022-May 2026</p>
+          </div>
+          <div class="experience-info">
+            <h3 class="exp-title">The University of Texas at Dallas</h3>
+            <p class="ed-details">Major: <b>Computer Science</b></p>
+            <p class="ed-details">Minor: <b>History</b></p>
+            <p class="ed-details">GPA: <b>4.0</b></p>
+          </div>
+        </div>
+        <h3>My Experience</h3>
+        <div class="card">
+          <div class="experience-heading">
+            <h3 class="exp-title">Engineering Intern</h3>
+            <p class="ed-details">Summer 2024</p>
+          </div>
+          <div class="experience-info">
+            <h3 class="exp-title">Justworks</h3>
+            <ul class="ed-details">
+              <li>
+                Worked on the mobile team to improve empty and loading states in
+                the official Justworks app.
+              </li>
+              <li>
+                Utilized React Native with Typescript to develop new components
+                in mobile component library.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="experience-heading">
+            <h3 class="exp-title">Tech Fellow</h3>
+            <p class="ed-details">Spring 2024</p>
+          </div>
+          <div class="experience-info">
+            <h3 class="exp-title">Codepath</h3>
+            <ul class="ed-details">
+              <li>
+                Mentored students by providing teaching and technical support in
+                a semester-long Android mobile development course
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="experience-heading">
+            <h3 class="exp-title">Undergraduate Research Assistant</h3>
+            <p class="ed-details">Summer 2022</p>
+          </div>
+          <div class="experience-info">
+            <h3 class="exp-title">The University of Texas at Dallas</h3>
+            <ul class="ed-details">
+              <li>
+                Researched benchmarking for static analysis tools as a full-time
+                summer research assistant
+              </li>
+              <li>
+                Programmed in Python and Java to create a system that reduces
+                input programs into small benchmarks for configurable JavaScript
+                static analysis tools
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="project-section">
-    <h2 id="project-heading">My Projects</h2>
-    <div id="projects">
-        <div id="project1">
-            <a href="focus" class="image-link">
-              <div class="project-image" id="project-tile1"></div>
-            </a>
-        <div class="project-info">
-        <div>
-        <h3 class="project-title">Focus Pomodoro Timer</h3>
-        <p class="project-tools">HTML, CSS, Javascript, React</p>
+      <h2 id="project-heading">Some of My Projects</h2>
+      <div id="projects">
+        <div class="card">
+          <a href="focus" class="image-link">
+            <div class="project-image" id="project-tile1"></div>
+          </a>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Focus Pomodoro Timer</h3>
+              <p class="project-tools">HTML, CSS, Javascript, React</p>
+            </div>
+            <div>
+              <p class="project-link">
+                <a class="project-link" href="focus">Try it out!</a>
+              </p>
+              <p class="project-link">
+                <a class="project-link" href="https://github.com/egsch/focus"
+                  >View on Github</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-        <p class="project-link" ><a class="project-link" href="focus">Try it out!</a></p>
-        <p class="project-link" ><a class="project-link" href="https://github.com/egsch/focus">View on Github</a></p>
+        <div class="card">
+          <a href="markdown-previewer" class="image-link">
+            <div class="project-image" id="project-tile2"></div>
+          </a>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">React Markdown Previewer</h3>
+              <p class="project-tools">HTML, CSS, Javascript, React</p>
+            </div>
+            <div>
+              <p class="project-link">
+                <a class="project-link" href="markdown-previewer"
+                  >Try it out!</a
+                >
+              </p>
+              <p class="project-link">
+                <a
+                  class="project-link"
+                  href="https://github.com/egsch/markdown-previewer"
+                  >View on Github</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="card">
+          <a href="https://myexercise.glitch.me/" class="image-link">
+            <div class="project-image" id="project-tile3"></div>
+          </a>
+          <div class="project-info">
+            <h3 class="project-title">Exercise Tracker API</h3>
+            <p class="project-tools">Node, Express, MongoDB</p>
+            <div>
+              <p class="project-link">
+                <a class="project-link" href="https://myexercise.glitch.me/"
+                  >Try it out!</a
+                >
+              </p>
+              <p class="project-link">
+                <a
+                  class="project-link"
+                  href="https://github.com/egsch/myexercise"
+                  >View on Github</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-      <div id="project2">
-            <a href="markdown-previewer" class="image-link">
-              <div class="project-image" id="project-tile2"></div>
-            </a>
-        <div class="project-info">
-        <div>
-            <h3 class="project-title">React Markdown Previewer</h3>
-        <p class="project-tools">HTML, CSS, Javascript, React</p>
-        </div>
-        <div><p class="project-link"><a class="project-link" href="markdown-previewer">Try it out!</a></p>
-        <p class="project-link"><a class="project-link" href="https://github.com/egsch/markdown-previewer">View on Github</a></p></div>
-        </div>
-        </div>
-        <div id="project3">
-            <a href="https://myexercise.glitch.me/" class="image-link">
-              <div class="project-image" id="project-tile3"></div>
-            </a>
-        <div class="project-info">
-        <h3 class="project-title">Exercise Tracker API</h3>
-        <p class="project-tools">Node, Express, MongoDB</p>
-        <div>
-        <p class="project-link" ><a class="project-link" href="https://myexercise.glitch.me/">Try it out!</a></p>
-        <p class="project-link" ><a class="project-link" href="https://github.com/egsch/myexercise">View on Github</a></p>
-        </div>
-        </div>
-        </div>
-    </div>
+      </div>
     </section>
     <section id="contact">
       <div id="white">
-      <h2>Want to learn more about me?</h2>
-      <p class="pusual"> Find me on <a href="https://github.com/egsch" target="_blank" class="plink">Github</a> or <a href="https://www.linkedin.com/in/emma-schaumann/" target="_blank" class="plink">LinkedIn</a>!</p>
-       </div>
+        <h2>Want to learn more about me?</h2>
+        <p class="pusual">
+          Find me on
+          <a href="https://github.com/egsch" target="_blank" class="plink"
+            >Github</a
+          >
+          or
+          <a
+            href="https://www.linkedin.com/in/emma-schaumann/"
+            target="_blank"
+            class="plink"
+            >LinkedIn</a
+          >!
+        </p>
+      </div>
     </section>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
-</html>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-</body>
 </html>
